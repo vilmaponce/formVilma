@@ -1,0 +1,113 @@
+/* Estilos del modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1; /* Encima de todo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
+}
+
+.modal-content {
+    background-color: #e6f10a;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width:90%;
+    max-width: 300px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+
+.close {
+    color: #0e0d0d;
+    float: right;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.form-container {
+    background-color: #000;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-top: 5px;
+    padding: auto;
+    width: 100%;
+    text-align: left;
+    color: #ff0;
+}
+
+input[type="text"], input[type="email"], input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border: 1px solid #ff0;
+    border-radius: 3px;
+    background-color: #333;
+    color: #ff0;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #ff0;
+    color: #000;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #ffd700;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+}
+
